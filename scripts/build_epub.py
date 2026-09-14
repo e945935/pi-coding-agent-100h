@@ -133,7 +133,8 @@ def build():
     (WORK / "OEBPS/images/cover.jpg").write_bytes(cover.read_bytes())
     (WORK / "OEBPS/text/cover.xhtml").write_text('''<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-TW"><head><title>封面</title><link rel="stylesheet" href="../styles/style.css"/></head><body class="cover"><img src="../images/cover.jpg" alt="Pi Coding Agent 100 小時實戰教材"/></body></html>''', encoding="utf-8")
     items = [('cover', 'text/cover.xhtml', 'application/xhtml+xml', ''), ('cover-image', 'images/cover.jpg', 'image/jpeg', 'properties="cover-image"')]
-    spine = ['cover']
+    # 封面在 spine 只宣告一次；正文頁面另列入 spine。
+    spine = []
     nav = []
     all_pages = chapters[:9] + appendix
     for slug, title, path in all_pages:
