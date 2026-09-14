@@ -27,7 +27,7 @@ appendix = [
     ("migration", "從其他 Coding Agent 遷移到 Pi", ROOT / "docs/AGENT_MIGRATION_GUIDE.md"),
 ]
 
-CSS = """body{font-family:serif;line-height:1.7;margin:5%;color:#202938}h1{color:#173b5f;border-bottom:2px solid #38bdf8;padding-bottom:.3em}h2{color:#24577d;margin-top:1.5em}h3{color:#456b85}pre{background:#f1f5f9;padding:1em;overflow-wrap:anywhere;white-space:pre-wrap;font-family:monospace}code{background:#eef2f7;padding:.1em .25em}table{border-collapse:collapse;width:100%;margin:1em 0}td,th{border:1px solid #94a3b8;padding:.4em;text-align:left}th{background:#e2e8f0}li{margin:.25em 0}.cover{text-align:center}.cover img{max-width:100%;height:auto}.cover-title{font-size:2em;font-weight:bold}"""
+CSS = """body{font-family:serif;line-height:1.7;margin:5%;color:#202938}h1{color:#173b5f;border-bottom:2px solid #38bdf8;padding-bottom:.3em}h2{color:#24577d;margin-top:1.5em}h3{color:#456b85}pre{background:#f1f5f9;padding:1em;overflow-wrap:anywhere;white-space:pre-wrap;font-family:monospace}code{background:#eef2f7;padding:.1em .25em}table{border-collapse:collapse;border:1px solid #64748b;width:100%;margin:1em 0}td,th{border:1px solid #64748b;padding:.4em;text-align:left}th{background:#e2e8f0}li{margin:.25em 0}.cover{text-align:center}.cover img{max-width:100%;height:auto}.cover-title{font-size:2em;font-weight:bold}"""
 
 def md_to_html(text):
     lines = text.replace("\r\n", "\n").split("\n")
@@ -112,7 +112,7 @@ def inline(value):
 
 def page(slug, title, body):
     return f'''<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-TW"><head><title>{escape(title)}</title><link rel="stylesheet" type="text/css" href="style.css"/></head><body><h1>{escape(title)}</h1>{body}</body></html>'''
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-TW"><head><title>{escape(title)}</title><link rel="stylesheet" type="text/css" href="../styles/style.css"/></head><body><h1>{escape(title)}</h1>{body}</body></html>'''
 
 def build():
     if WORK.exists():
