@@ -1,6 +1,8 @@
-# Pi Coding Agent 100 小時課程大綱
+# Pi Coding Agent 核心自學課程大綱（60 小時）
 
-## 01 基礎入門，10 小時
+> 若加入講師授課、完整作業、團隊實驗與延伸專題，整體課程可擴充至 80～100 小時。
+
+## 01 基礎入門，6 小時
 
 ### 學習目標
 
@@ -20,15 +22,15 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Pi 介紹、安裝與啟動 | 2 |
-| 2 | 登入、provider 與模型選擇 | 2 |
-| 3 | 基本工具與第一個任務 | 3 |
-| 4 | AGENTS.md 與專案規範 | 2 |
+| 1 | Pi 介紹、安裝與啟動 | 1 |
+| 2 | 登入、provider 與模型選擇 | 1 |
+| 3 | 基本工具與第一個任務 | 2 |
+| 4 | AGENTS.md 與專案規範 | 1 |
 | 5 | 綜合練習 | 1 |
 
 ---
 
-## 02 互動模式與 Session 工作流，15 小時
+## 02 互動模式與 Session 工作流，8 小時
 
 ### 學習目標
 
@@ -48,15 +50,15 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Interactive mode 與編輯器操作 | 3 |
-| 2 | @file、貼上圖片/文字與 shell command | 3 |
-| 3 | Session 儲存、resume、命名 | 3 |
-| 4 | tree、fork、clone 與 compaction | 4 |
-| 5 | print mode / json mode 實作 | 2 |
+| 1 | Interactive mode 與編輯器操作 | 1 |
+| 2 | @file、貼上圖片/文字與 shell command | 2 |
+| 3 | Session 儲存、resume、命名 | 2 |
+| 4 | tree、fork、clone 與 compaction | 2 |
+| 5 | print mode / json mode 實作 | 1 |
 
 ---
 
-## 03 設定、安全與平台環境，10 小時
+## 03 設定、安全與平台環境，6 小時
 
 ### 學習目標
 
@@ -79,15 +81,15 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Settings 與環境變數 | 2 |
-| 2 | Windows 與 Terminal 設定 | 2 |
-| 3 | Shell aliases 與 tmux | 2 |
+| 1 | Settings 與環境變數 | 1 |
+| 2 | Windows 與 Terminal 設定 | 1 |
+| 3 | Shell aliases 與 tmux | 1 |
 | 4 | Security、trust 與 secrets 管理 | 2 |
-| 5 | Containerization 與安全工作流 | 2 |
+| 5 | Containerization 與安全工作流 | 1 |
 
 ---
 
-## 04 Provider、模型與本地模型，10 小時
+## 04 Provider、模型與本地模型，6 小時
 
 ### 學習目標
 
@@ -106,15 +108,15 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Provider 類型與登入方式 | 2 |
-| 2 | API key 與雲端 provider | 2 |
-| 3 | 模型選擇與 model catalog | 2 |
-| 4 | Custom models | 2 |
+| 1 | Provider 類型與登入方式 | 1 |
+| 2 | API key 與雲端 provider | 1 |
+| 3 | 模型選擇與 model catalog | 1 |
+| 4 | Custom models | 1 |
 | 5 | llama.cpp 與本地模型 | 2 |
 
 ---
 
-## 05 Prompt Templates、Skills、Themes，15 小時
+## 05 Prompt Templates、Skills、Themes，8 小時
 
 ### 學習目標
 
@@ -134,15 +136,15 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Prompt template 基礎 | 3 |
-| 2 | Slash command 型 prompt 實作 | 3 |
-| 3 | Skills 概念與實作 | 4 |
-| 4 | Themes 與使用者體驗 | 2 |
-| 5 | Pi packages 與團隊共享 | 3 |
+| 1 | Prompt template 基礎 | 1 |
+| 2 | Slash command 型 prompt 實作 | 1 |
+| 3 | Skills 概念與實作 | 3 |
+| 4 | Themes 與使用者體驗 | 1 |
+| 5 | Pi packages 與團隊共享 | 2 |
 
 ---
 
-## 06 Extensions 開發，20 小時
+## 06 Extensions 開發，12 小時
 
 ### 學習目標
 
@@ -161,17 +163,17 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Extension 架構與放置位置 | 2 |
-| 2 | 第一個 /hello command | 3 |
-| 3 | registerTool 自訂工具 | 4 |
-| 4 | Lifecycle events | 3 |
-| 5 | 攔截危險 tool call | 3 |
-| 6 | 自訂 UI 與互動流程 | 3 |
-| 7 | Extension 專題實作 | 2 |
+| 1 | Extension 架構與放置位置 | 1 |
+| 2 | 第一個 /hello command | 2 |
+| 3 | registerTool 自訂工具 | 3 |
+| 4 | Lifecycle events | 2 |
+| 5 | 攔截危險 tool call | 2 |
+| 6 | 自訂 UI 與互動流程 | 1 |
+| 7 | Extension 專題實作 | 1 |
 
 ---
 
-## 07 SDK、RPC 與 JSON 整合，15 小時
+## 07 SDK、RPC 與 JSON 整合，10 小時
 
 ### 學習目標
 
@@ -190,15 +192,15 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | SDK 核心概念 | 3 |
-| 2 | createAgentSession 實作 | 3 |
-| 3 | Event stream 與 streaming output | 3 |
-| 4 | RPC mode | 3 |
+| 1 | SDK 核心概念 | 1 |
+| 2 | createAgentSession 實作 | 2 |
+| 3 | Event stream 與 streaming output | 2 |
+| 4 | RPC mode | 2 |
 | 5 | JSON mode 與自動化 CLI | 3 |
 
 ---
 
-## 08 總整專題，5 小時
+## 08 總整專題，4 小時
 
 ### 學習目標
 

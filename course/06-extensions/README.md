@@ -1,4 +1,4 @@
-# 06 Extensions 開發，20 小時
+# 06 Extensions 開發，12 小時
 
 ## 本章情境
 

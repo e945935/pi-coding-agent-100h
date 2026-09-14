@@ -1,4 +1,4 @@
-# 04 Provider、模型與本地模型，10 小時
+# 04 Provider、模型與本地模型，6 小時
 
 ## 學習目標
 
@@ -21,10 +21,10 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Provider 類型與登入方式 | 2 |
-| 2 | API key 與雲端 provider | 2 |
-| 3 | 模型選擇與 model catalog | 2 |
-| 4 | Custom models | 2 |
+| 1 | Provider 類型與登入方式 | 1 |
+| 2 | API key 與雲端 provider | 1 |
+| 3 | 模型選擇與 model catalog | 1 |
+| 4 | Custom models | 1 |
 | 5 | llama.cpp 與本地模型 | 2 |
 
 ## 核心觀念

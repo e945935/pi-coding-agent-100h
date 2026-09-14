@@ -1,4 +1,4 @@
-# 02 互動模式與 Session 工作流，15 小時
+# 02 互動模式與 Session 工作流，8 小時
 
 ## 本章情境
 
@@ -27,11 +27,11 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Interactive mode 與編輯器操作 | 3 |
-| 2 | `@file`、貼上內容與 shell command | 3 |
-| 3 | Session 儲存、resume 與命名 | 3 |
-| 4 | tree、fork、clone 與 compaction | 4 |
-| 5 | print mode / JSON mode 實作 | 2 |
+| 1 | Interactive mode 與編輯器操作 | 1 |
+| 2 | `@file`、貼上內容與 shell command | 2 |
+| 3 | Session 儲存、resume 與命名 | 2 |
+| 4 | tree、fork、clone 與 compaction | 2 |
+| 5 | print mode / JSON mode 實作 | 1 |
 
 ## 指令比較表
 

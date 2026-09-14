@@ -2,6 +2,7 @@
 
 - [前言](PREFACE.md)
 - [主教材說明](BOOK.md)
+- [學習時間重新估算](TIME_ESTIMATE.md)
 - [課程大綱](course/COURSE_OUTLINE.md)
 - [評量與驗收規準](ASSESSMENT.md)
 - [學習者進度檢查表](LEARNING_CHECKLIST.md)

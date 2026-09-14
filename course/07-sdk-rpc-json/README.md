@@ -1,4 +1,4 @@
-# 07 SDK、RPC 與 JSON 整合，15 小時
+# 07 SDK、RPC 與 JSON 整合，10 小時
 
 ## 本章情境
 

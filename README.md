@@ -1,6 +1,8 @@
 # Pi Coding Agent 100 小時學習教材
 
-本專案用來整理 Pi Coding Agent 官方文件，規劃成 100 小時的實作型學習教材。
+本專案用來整理 Pi Coding Agent 官方文件，規劃成實作型學習教材。
+
+核心自學內容約 60 小時；包含完整作業、講師授課、團隊實驗與延伸專題時，完整課程規模約 80～100 小時。詳細估算請參考 [TIME_ESTIMATE.md](TIME_ESTIMATE.md)。
 
 讀者服務 repo：<https://github.com/e945935/pi-coding-agent-100h>
 
@@ -31,17 +33,19 @@
 
 ## 課程模組與時數
 
+以下是一般讀者「閱讀、跟做範例、完成基本作業」的建議時數。
+
 | 模組 | 主題 | 時數 |
 |---|---|---:|
-| 01 | 基礎入門 | 10 |
-| 02 | 互動模式與 Session 工作流 | 15 |
-| 03 | 設定、安全與平台環境 | 10 |
-| 04 | Provider、模型與本地模型 | 10 |
-| 05 | Prompt Templates、Skills、Themes | 15 |
-| 06 | Extensions 開發 | 20 |
-| 07 | SDK、RPC 與 JSON 整合 | 15 |
-| 08 | 總整專題 | 5 |
-|  | **合計** | **100** |
+| 01 | 基礎入門 | 6 |
+| 02 | 互動模式與 Session 工作流 | 8 |
+| 03 | 設定、安全與平台環境 | 6 |
+| 04 | Provider、模型與本地模型 | 6 |
+| 05 | Prompt Templates、Skills、Themes | 8 |
+| 06 | Extensions 開發 | 12 |
+| 07 | SDK、RPC 與 JSON 整合 | 10 |
+| 08 | 總整專題 | 4 |
+|  | **核心自學合計** | **60** |
 
 ## 資料夾說明
 

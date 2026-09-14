@@ -1,4 +1,4 @@
-# 03 設定、安全與平台環境，10 小時
+# 03 設定、安全與平台環境，6 小時
 
 ## 學習目標
 
@@ -25,11 +25,11 @@
 
 | 課次 | 主題 | 時數 |
 |---|---|---:|
-| 1 | Settings 與環境變數 | 2 |
-| 2 | Windows 與 Terminal 設定 | 2 |
-| 3 | Shell aliases 與 tmux | 2 |
+| 1 | Settings 與環境變數 | 1 |
+| 2 | Windows 與 Terminal 設定 | 1 |
+| 3 | Shell aliases 與 tmux | 1 |
 | 4 | Security、trust 與 secrets 管理 | 2 |
-| 5 | Containerization 與安全工作流 | 2 |
+| 5 | Containerization 與安全工作流 | 1 |
 
 ## 核心觀念
 

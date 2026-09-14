@@ -1,4 +1,4 @@
-# 05 Prompt Templates、Skills、Themes，15 小時
+# 05 Prompt Templates、Skills、Themes，8 小時
 
 ## 本章情境
 
