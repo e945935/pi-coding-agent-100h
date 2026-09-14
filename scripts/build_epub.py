@@ -31,39 +31,55 @@ CSS = """body{font-family:serif;line-height:1.7;margin:5%;color:#202938}h1{color
 
 def md_to_html(text):
     lines = text.replace("\r\n", "\n").split("\n")
-    out, in_code, code = [], False, []
+    out, code = [], []
+    in_code = False
+    list_kind = None
+
+    def close_list():
+        nonlocal list_kind
+        if list_kind:
+            out.append(f"</{list_kind}>")
+            list_kind = None
+
     for line in lines:
         if line.startswith("```"):
             if in_code:
                 out.append("<pre><code>" + escape("\n".join(code)) + "</code></pre>")
                 code, in_code = [], False
             else:
+                close_list()
                 in_code = True
             continue
         if in_code:
             code.append(line)
             continue
         if not line.strip():
+            close_list()
             continue
         m = re.match(r"^(#{1,3})\s+(.*)$", line)
         if m:
-            level = len(m.group(1)); out.append(f"<h{level}>{inline(m.group(2))}</h{level}>"); continue
-        if re.match(r"^[-*]\s+", line):
-            if not out or not out[-1].startswith("<ul>"): out.append("<ul>")
-            out.append("<li>" + inline(re.sub(r"^[-*]\s+", "", line)) + "</li>")
+            close_list()
+            level = len(m.group(1))
+            out.append(f"<h{level}>{inline(m.group(2))}</h{level}>")
             continue
-        if re.match(r"^\d+\.\s+", line):
-            if not out or not out[-1].startswith("<ol>"): out.append("<ol>")
-            out.append("<li>" + inline(re.sub(r"^\d+\.\s+", "", line)) + "</li>")
+        unordered = re.match(r"^[-*]\s+(.*)$", line)
+        ordered = re.match(r"^\d+\.\s+(.*)$", line)
+        if unordered or ordered:
+            kind = "ul" if unordered else "ol"
+            if list_kind != kind:
+                close_list(); out.append(f"<{kind}>"); list_kind = kind
+            value = (unordered or ordered).group(1)
+            out.append("<li>" + inline(value) + "</li>")
             continue
+        close_list()
         if line.startswith("|"):
             out.append("<p>" + inline(line) + "</p>")
-            continue
-        out.append("<p>" + inline(line) + "</p>")
-    # close lists in the simple renderer
-    html = "\n".join(out)
-    html = html.replace("</li>\n<p>", "</li></ul>\n<p>")
-    return html
+        else:
+            out.append("<p>" + inline(line) + "</p>")
+    if in_code:
+        out.append("<pre><code>" + escape("\n".join(code)) + "</code></pre>")
+    close_list()
+    return "\n".join(out)
 
 def inline(value):
     value = escape(value)
