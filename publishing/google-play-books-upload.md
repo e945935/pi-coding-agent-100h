@@ -39,8 +39,10 @@ publishing/store-description.md
    - 出版者：Pi Coding Agent 100 小時教材編輯團隊
 5. 上傳 `dist/pi-coding-agent-100h.epub`。
 6. 上傳封面：
-   - 原始封面：`assets/cover.svg`
-   - 若平台不接受 SVG，請將封面另存為高解析度 JPG 或 PNG 後上傳。
+   - 建議檔案：`assets/cover.jpg`
+   - 尺寸：1600 × 2560 px
+   - 色彩模式：RGB
+   - 若平台要求其他規格，依平台預覽與最新說明調整。
 7. 貼上 `publishing/store-description.md` 的長版簡介。
 8. 設定分類、關鍵字、銷售地區、價格與預覽比例。
 9. 檢查預覽器中的：

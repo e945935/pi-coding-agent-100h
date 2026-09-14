@@ -5,9 +5,21 @@
 ## 檔案
 
 - `metadata.yaml`：書目與出版資訊
+- `../assets/cover.jpg`：平台上傳用 JPG 封面
+- `../assets/cover.svg`：可編輯的向量封面原稿
 - `store-description.md`：商店短版、長版簡介
 - `upload-checklist.md`：上架前檢查表
 - `google-play-books-upload.md`：Google Play Books 操作指南
+
+## 封面
+
+產生 JPG 封面：
+
+```bash
+python scripts/build_cover_jpg.py
+```
+
+目前封面規格：1600 × 2560 px、RGB、JPG。
 
 ## EPUB
 

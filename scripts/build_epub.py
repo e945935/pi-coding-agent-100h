@@ -127,10 +127,12 @@ def build():
     (WORK / "mimetype").write_text("application/epub+zip", encoding="utf-8")
     (WORK / "META-INF/container.xml").write_text('''<?xml version="1.0"?><container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container"><rootfiles><rootfile full-path="OEBPS/content.opf" media-type="application/oebps-package+xml"/></rootfiles></container>''', encoding="utf-8")
     (WORK / "OEBPS/styles/style.css").write_text(CSS, encoding="utf-8")
-    cover = ROOT / "assets/cover.svg"
-    (WORK / "OEBPS/images/cover.svg").write_bytes(cover.read_bytes())
-    (WORK / "OEBPS/text/cover.xhtml").write_text('''<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-TW"><head><title>封面</title><link rel="stylesheet" href="../styles/style.css"/></head><body class="cover"><img src="../images/cover.svg" alt="Pi Coding Agent 100 小時實戰教材"/></body></html>''', encoding="utf-8")
-    items = [('cover', 'text/cover.xhtml', 'application/xhtml+xml', 'properties="cover-image"'), ('cover-image', 'images/cover.svg', 'image/svg+xml', '')]
+    cover = ROOT / "assets/cover.jpg"
+    if not cover.exists():
+        raise FileNotFoundError("請先執行 scripts/build_cover_jpg.py 產生封面 JPG")
+    (WORK / "OEBPS/images/cover.jpg").write_bytes(cover.read_bytes())
+    (WORK / "OEBPS/text/cover.xhtml").write_text('''<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-TW"><head><title>封面</title><link rel="stylesheet" href="../styles/style.css"/></head><body class="cover"><img src="../images/cover.jpg" alt="Pi Coding Agent 100 小時實戰教材"/></body></html>''', encoding="utf-8")
+    items = [('cover', 'text/cover.xhtml', 'application/xhtml+xml', ''), ('cover-image', 'images/cover.jpg', 'image/jpeg', 'properties="cover-image"')]
     spine = ['cover']
     nav = []
     all_pages = chapters[:9] + appendix
