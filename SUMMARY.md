@@ -4,6 +4,8 @@
 - [主教材說明](BOOK.md)
 - [課程大綱](course/COURSE_OUTLINE.md)
 - [評量與驗收規準](ASSESSMENT.md)
+- [學習者進度檢查表](LEARNING_CHECKLIST.md)
+- [小測驗參考答案](QUIZ_ANSWERS.md)
 - [術語表](GLOSSARY.md)
 - [Roadmap](ROADMAP.md)
 - [Backlog](BACKLOG.md)
@@ -27,8 +29,11 @@
 - [決策表：Pi 能力怎麼選](docs/DECISION_TABLES.md)
 - [Model Management Quick Reference](docs/MODEL_MANAGEMENT_QUICK_REFERENCE.md)
 - [Settings 範例](docs/SETTINGS_EXAMPLES.md)
+- [Provider 設定檢查表](docs/PROVIDER_CHECKLIST.md)
+- [常見問題排除](docs/TROUBLESHOOTING.md)
 - [Shell 指令對照表](docs/SHELL_COMMANDS.md)
 - [作業與實作題](assignments/ASSIGNMENTS.md)
+- [作業參考方向](assignments/ANSWER_GUIDE.md)
 - [講師備課筆記](notes/TEACHING_NOTES.md)
 
 ## 範例
