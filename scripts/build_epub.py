@@ -34,6 +34,8 @@ def md_to_html(text):
     out, code = [], []
     in_code = False
     list_kind = None
+    table_open = False
+    table_header = False
 
     def close_list():
         nonlocal list_kind
@@ -41,24 +43,35 @@ def md_to_html(text):
             out.append(f"</{list_kind}>")
             list_kind = None
 
+    def close_table():
+        nonlocal table_open, table_header
+        if table_open:
+            out.append("</tbody></table>")
+            table_open = False
+            table_header = False
+
+    def close_blocks():
+        close_list()
+        close_table()
+
     for line in lines:
         if line.startswith("```"):
             if in_code:
                 out.append("<pre><code>" + escape("\n".join(code)) + "</code></pre>")
                 code, in_code = [], False
             else:
-                close_list()
+                close_blocks()
                 in_code = True
             continue
         if in_code:
             code.append(line)
             continue
         if not line.strip():
-            close_list()
+            close_blocks()
             continue
         m = re.match(r"^(#{1,3})\s+(.*)$", line)
         if m:
-            close_list()
+            close_blocks()
             level = len(m.group(1))
             out.append(f"<h{level}>{inline(m.group(2))}</h{level}>")
             continue
@@ -67,18 +80,27 @@ def md_to_html(text):
         if unordered or ordered:
             kind = "ul" if unordered else "ol"
             if list_kind != kind:
-                close_list(); out.append(f"<{kind}>"); list_kind = kind
+                close_blocks(); out.append(f"<{kind}>"); list_kind = kind
             value = (unordered or ordered).group(1)
             out.append("<li>" + inline(value) + "</li>")
             continue
-        close_list()
         if line.startswith("|"):
-            out.append("<p>" + inline(line) + "</p>")
-        else:
-            out.append("<p>" + inline(line) + "</p>")
+            close_list()
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if all(re.fullmatch(r":?-{3,}:?", cell) for cell in cells):
+                continue
+            if not table_open:
+                out.append("<table><thead><tr>" + "".join(f"<th>{inline(cell)}</th>" for cell in cells) + "</tr></thead><tbody>")
+                table_open = True
+                table_header = True
+            else:
+                out.append("<tr>" + "".join(f"<td>{inline(cell)}</td>" for cell in cells) + "</tr>")
+            continue
+        close_blocks()
+        out.append("<p>" + inline(line) + "</p>")
     if in_code:
         out.append("<pre><code>" + escape("\n".join(code)) + "</code></pre>")
-    close_list()
+    close_blocks()
     return "\n".join(out)
 
 def inline(value):
