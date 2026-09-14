@@ -111,6 +111,8 @@ def inline(value):
     return value
 
 def page(slug, title, body):
+    # 每個 Markdown 檔案通常已有第一個 H1；頁面標題已由外層產生，避免重複顯示。
+    body = re.sub(r'^\\s*<h1>.*?</h1>\\s*', '', body, count=1, flags=re.S)
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="zh-TW"><head><title>{escape(title)}</title><link rel="stylesheet" type="text/css" href="../styles/style.css"/></head><body><h1>{escape(title)}</h1>{body}</body></html>'''
 
