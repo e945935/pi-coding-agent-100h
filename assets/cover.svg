@@ -11,10 +11,11 @@
   <rect x="130" y="180" width="1340" height="2200" rx="34" fill="none" stroke="#7dd3fc" stroke-opacity=".35" stroke-width="3"/>
   <text x="180" y="480" fill="#7dd3fc" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="72" font-weight="700">PI CODING AGENT</text>
   <rect x="180" y="555" width="600" height="12" rx="6" fill="url(#accent)"/>
-  <text x="180" y="850" fill="white" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="150" font-weight="900">100 小時</text>
+  <text x="180" y="850" fill="white" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="136" font-weight="900">60 小時核心</text>
   <text x="180" y="1040" fill="white" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="116" font-weight="700">實戰教材</text>
   <text x="180" y="1260" fill="#cbd5e1" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="54">從入門、工作流、客製化</text>
   <text x="180" y="1345" fill="#cbd5e1" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="54">到 SDK 與系統整合</text>
+  <text x="180" y="1450" fill="#7dd3fc" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="42">完整課程可延伸至 100 小時</text>
   <g transform="translate(180 1640)" fill="none" stroke="#7dd3fc" stroke-width="18">
     <path d="M0 160h190l90-150h220"/>
     <path d="M0 310h260l100-150h210"/>
