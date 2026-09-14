@@ -7,6 +7,7 @@
 - `metadata.yaml`：書目與出版資訊
 - `store-description.md`：商店短版、長版簡介
 - `upload-checklist.md`：上架前檢查表
+- `google-play-books-upload.md`：Google Play Books 操作指南
 
 ## EPUB
 

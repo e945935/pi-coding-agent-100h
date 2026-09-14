@@ -13,6 +13,7 @@
 - [版本與維護紀錄](VERSION_NOTES.md)
 - [資深編輯逐章審閱意見](EDITORIAL_REVIEW.md)
 - [出版與上架資料](publishing/README.md)
+- [Google Play Books 上架指南](publishing/google-play-books-upload.md)
 - [EPUB 電子書](dist/pi-coding-agent-100h.epub)
 
 ## 課程模組
