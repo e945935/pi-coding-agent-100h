@@ -62,7 +62,7 @@ Pi 是一個終端機裡的 coding agent harness。它的核心很小，主要�
 可以使用本教材內建的 sample project：
 
 ```bash
-cd C:/Users/user/pi-coding-agent-100h/sample-project
+cd /path/to/pi-coding-agent-100h/sample-project
 ```
 
 若你使用 macOS/Linux，請換成自己的路徑。

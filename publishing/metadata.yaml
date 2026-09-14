@@ -1,0 +1,22 @@
+title: Pi Coding Agent 100 小時實戰教材
+subtitle: 從入門、工作流、客製化到 SDK 與系統整合
+author: Pi Coding Agent 100 小時教材編輯團隊
+language: zh-TW
+publisher: Pi Coding Agent 100 小時教材編輯團隊
+publication_date: 2026-09-14
+edition: 1
+rights: Copyright © 2026 Pi Coding Agent 100 小時教材編輯團隊. All rights reserved.
+isbn_epub: 待申請
+imprint: 自出版
+subject: Technology / Programming / Open Source
+keywords:
+  - Pi Coding Agent
+  - AI coding agent
+  - 程式開發
+  - 人工智慧
+  - TypeScript
+  - SDK
+  - Extensions
+  - 繁體中文
+cover: assets/cover.svg
+repository: https://github.com/e945935/pi-coding-agent-100h

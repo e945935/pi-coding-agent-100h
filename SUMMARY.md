@@ -10,6 +10,9 @@
 - [Roadmap](ROADMAP.md)
 - [Backlog](BACKLOG.md)
 - [版本與維護紀錄](VERSION_NOTES.md)
+- [資深編輯逐章審閱意見](EDITORIAL_REVIEW.md)
+- [出版與上架資料](publishing/README.md)
+- [EPUB 電子書](dist/pi-coding-agent-100h.epub)
 
 ## 課程模組
 

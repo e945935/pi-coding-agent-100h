@@ -40,14 +40,14 @@ examples/sdk/
 ### 步驟 1：安裝
 
 ```bash
-cd /c/Users/user/pi-coding-agent-100h/examples/sdk
+cd /path/to/pi-coding-agent-100h/examples/sdk
 npm install
 ```
 
 PowerShell：
 
 ```powershell
-cd C:\Users\user\pi-coding-agent-100h\examples\sdk
+cd C:\path\to\pi-coding-agent-100h\examples\sdk
 npm install
 ```
 
@@ -76,7 +76,7 @@ npm run start -- "請用三點摘要目前資料夾"
 ## JSON mode 可執行範例
 
 ```bash
-cd /c/Users/user/pi-coding-agent-100h/sample-project
+cd /path/to/pi-coding-agent-100h/sample-project
 pi --mode json "請用一句話摘要這個 repo" 2>/dev/null
 ```
 

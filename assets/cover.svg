@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2560" viewBox="0 0 1600 2560" role="img" aria-labelledby="title desc">
+  <title id="title">Pi Coding Agent 100 小時實戰教材</title>
+  <desc id="desc">從入門、工作流、客製化到 SDK 整合的繁體中文實作教材</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101828"/><stop offset="1" stop-color="#173b5f"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  </defs>
+  <rect width="1600" height="2560" fill="url(#bg)"/>
+  <circle cx="1320" cy="350" r="420" fill="#38bdf8" opacity=".12"/>
+  <circle cx="250" cy="2230" r="520" fill="#a78bfa" opacity=".1"/>
+  <rect x="130" y="180" width="1340" height="2200" rx="34" fill="none" stroke="#7dd3fc" stroke-opacity=".35" stroke-width="3"/>
+  <text x="180" y="480" fill="#7dd3fc" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="72" font-weight="700">PI CODING AGENT</text>
+  <rect x="180" y="555" width="600" height="12" rx="6" fill="url(#accent)"/>
+  <text x="180" y="850" fill="white" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="150" font-weight="900">100 小時</text>
+  <text x="180" y="1040" fill="white" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="116" font-weight="700">實戰教材</text>
+  <text x="180" y="1260" fill="#cbd5e1" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="54">從入門、工作流、客製化</text>
+  <text x="180" y="1345" fill="#cbd5e1" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="54">到 SDK 與系統整合</text>
+  <g transform="translate(180 1640)" fill="none" stroke="#7dd3fc" stroke-width="18">
+    <path d="M0 160h190l90-150h220"/>
+    <path d="M0 310h260l100-150h210"/>
+    <circle cx="0" cy="160" r="24" fill="#38bdf8"/><circle cx="280" cy="10" r="24" fill="#a78bfa"/><circle cx="260" cy="310" r="24" fill="#38bdf8"/><circle cx="360" cy="160" r="24" fill="#a78bfa"/><circle cx="570" cy="10" r="24" fill="#38bdf8"/>
+  </g>
+  <text x="180" y="2190" fill="#94a3b8" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="44">繁體中文・台灣用語・實作導向</text>
+  <text x="180" y="2290" fill="#64748b" font-family="Noto Sans TC, Microsoft JhengHei, sans-serif" font-size="34">Pi Coding Agent 100 小時學習教材</text>
+</svg>

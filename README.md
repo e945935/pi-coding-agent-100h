@@ -15,9 +15,11 @@
 5. [assignments/ASSIGNMENTS.md](assignments/ASSIGNMENTS.md)
 6. [LEARNING_CHECKLIST.md](LEARNING_CHECKLIST.md)
 7. [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
+8. [出版與上架資料](publishing/README.md)
+9. [EPUB 電子書](dist/pi-coding-agent-100h.epub)
 8. [ROADMAP.md](ROADMAP.md)
-9. [BACKLOG.md](BACKLOG.md)
-10. [VERSION_NOTES.md](VERSION_NOTES.md)
+11. [BACKLOG.md](BACKLOG.md)
+12. [VERSION_NOTES.md](VERSION_NOTES.md)
 
 ## 教材目標
 

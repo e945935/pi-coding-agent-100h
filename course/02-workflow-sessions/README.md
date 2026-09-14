@@ -59,13 +59,13 @@
 Git Bash：
 
 ```bash
-cd /c/Users/user/pi-coding-agent-100h/sample-project
+cd /path/to/pi-coding-agent-100h/sample-project
 ```
 
 PowerShell：
 
 ```powershell
-cd C:\Users\user\pi-coding-agent-100h\sample-project
+cd C:\path\to\pi-coding-agent-100h\sample-project
 ```
 
 ### 步驟 2：建立任務 session

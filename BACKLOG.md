@@ -36,6 +36,9 @@
 - [ ] 補 FAQ
 - [ ] 補案例研究
 - [ ] 補企業導入白皮書摘要
+- [x] 建立電子書封面
+- [x] 建立 Google Play Books / Kobo 上架資料
+- [x] 產生 EPUB 電子書
 
 ## 已完成
 
@@ -50,3 +53,4 @@
 - [x] 建立 final project proposal 與 demo checklist
 - [x] 補第 05 章 prompt / skill 放置位置
 - [x] 補第 07 章 JSON / RPC 範例
+- [x] 建立 EPUB 建置腳本
