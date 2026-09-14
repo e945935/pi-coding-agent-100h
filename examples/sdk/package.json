@@ -1,0 +1,13 @@
+{
+  "name": "pi-sdk-minimal-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx minimal.ts"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^0.85.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

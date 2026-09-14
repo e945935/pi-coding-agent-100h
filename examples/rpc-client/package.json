@@ -1,0 +1,8 @@
+{
+  "name": "pi-rpc-client-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node rpc-client.js"
+  }
+}

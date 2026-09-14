@@ -1,0 +1,15 @@
+{
+  "name": "pi-extension-dev-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "copy:sample": "node scripts/copy-to-sample.js"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^0.85.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}
